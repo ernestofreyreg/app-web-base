@@ -1,0 +1,88 @@
+body {
+  background-color: #F8F8F8;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.ModalDialog {
+  display: flex;
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); }
+  .ModalDialog .center {
+    display: inline-flex;
+    flex-grow: 2;
+    flex-direction: column; }
+  .ModalDialog .panel {
+    display: inline-flex;
+    flex-direction: column;
+    flex-grow: 2;
+    background-color: white;
+    border-radius: 4px; }
+  .ModalDialog .pad {
+    display: inline-flex;
+    flex-grow: 1;
+    flex-shrink: 0; }
+  @media screen and (max-width: 480px) {
+    .ModalDialog .pad {
+      flex-grow: 0;
+      flex-shrink: 0; } }
+  .ModalDialog .top {
+    justify-content: center; }
+  .ModalDialog .content {
+    background-color: red;
+    display: inline-flex;
+    flex-grow: 1;
+    overflow: scroll;
+    flex-direction: column; }
+  .ModalDialog .scrollable {
+    height: 1px; }
+  .ModalDialog .bottom {
+    padding: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+
+.StatusHeader {
+  display: flex;
+  flex-direction: column; }
+  .StatusHeader .title {
+    display: inline-flex;
+    flex-basis: 40px;
+    color: #666;
+    font-size: 20px;
+    line-height: 40px;
+    justify-content: center; }
+  .StatusHeader .user {
+    display: inline-flex;
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: space-between; }
+    .StatusHeader .user .avatar img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px; }
+    .StatusHeader .user .supporters {
+      display: inline-flex;
+      flex-grow: 1;
+      justify-content: flex-start; }
+    .StatusHeader .user .opinions {
+      display: inline-flex;
+      flex-grow: 1;
+      justify-content: flex-end; }
+  .StatusHeader .tabs {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-basis: 40px;
+    align-items: flex-end; }
+    .StatusHeader .tabs .tab {
+      color: #666;
+      font-size: 20px;
+      text-decoration: none; }
+      .StatusHeader .tabs .tab.active {
+        color: #e95700; }
+
+/*# sourceMappingURL=styles.css.map*/

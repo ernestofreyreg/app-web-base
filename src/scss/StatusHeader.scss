@@ -1,0 +1,59 @@
+.StatusHeader {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    display: inline-flex;
+    flex-basis: 40px;
+    color: $gray;
+    font-size: 20px;
+    line-height: 40px;
+    justify-content: center;
+  }
+
+  .user {
+    display: inline-flex;
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: space-between;
+
+    .avatar {
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+      }
+    }
+
+    .supporters {
+      display: inline-flex;
+      flex-grow: 1;
+      justify-content: flex-start;
+    }
+
+    .opinions {
+      display: inline-flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+  }
+
+  .tabs {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-basis: 40px;
+    align-items: flex-end;
+
+    .tab {
+      color: $gray;
+      font-size: 20px;
+      text-decoration: none;
+
+      &.active {
+        color: $orange;
+      }
+    }
+  }
+
+}

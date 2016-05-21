@@ -1,0 +1,54 @@
+.ModalDialog {
+  display: flex;
+  z-index: 10;
+  position: fixed;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+
+  .center {
+    display: inline-flex;
+    flex-grow: 2;
+    flex-direction: column;
+  }
+
+  .panel {
+    display: inline-flex;
+    flex-direction: column;
+    flex-grow: 2;
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  .pad {
+    display: inline-flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    .pad { flex-grow: 0; flex-shrink: 0; }
+  }
+
+  .top {
+    justify-content: center;
+  }
+
+  .content {
+    background-color: red;
+    display: inline-flex;
+    flex-grow: 1;
+    overflow: scroll;
+    flex-direction: column;
+  }
+
+  .scrollable {
+    height: 1px;
+  }
+
+  .bottom {
+    padding: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

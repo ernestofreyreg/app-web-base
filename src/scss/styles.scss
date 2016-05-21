@@ -1,0 +1,15 @@
+
+$gray: #CCC;
+$ligth-gray: #F0F0F0;
+$ligther-gray: #F8F8F8;
+
+body {
+  background-color: $ligther-gray;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+$gray: #666;
+$orange: #e95700;
+
+@import "./ModalDialog";
+@import "./StatusHeader";
